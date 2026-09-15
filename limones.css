@@ -13,8 +13,8 @@ body {
 }
 
 canvas {
-  background-color: #111827;
-  border: 3px solid #38bdf8;
+  background-color: #b6bfd3;
+  border: 3px solid #000000;
   display: block;
   margin: 20px auto;
 }
