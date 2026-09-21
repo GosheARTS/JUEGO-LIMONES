@@ -13,7 +13,7 @@ let limonX=canvas.clientWidth/2;
 let limonY=5;
 let puntaje=0;
 let vidas=3;
-let velocidadLimon=125
+let velocidadLimon=200
 
 function iniciar(){
     setInterval(bajarLimon,velocidadLimon);
@@ -46,6 +46,10 @@ function actualizarPantalla(){
 function dibujarSuelo(){
     ctx.fillStyle="darkgreen";
     ctx.fillRect(0,canvas.clientHeight-ALTO_SUELO,canvas.clientWidth,ALTO_SUELO);
+
+    if(vidas==0){
+        alert("GAME OVER");
+    }
 }
 
 function dibujarPersonaje(){
