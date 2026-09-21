@@ -46,7 +46,6 @@ function actualizarPantalla(){
 function dibujarSuelo(){
     ctx.fillStyle="darkgreen";
     ctx.fillRect(0,canvas.clientHeight-ALTO_SUELO,canvas.clientWidth,ALTO_SUELO);
-
     if(vidas==0){
         alert("GAME OVER");
     }
@@ -80,6 +79,13 @@ function detectarColision(){
         aparecerLimon();
         puntaje=puntaje+1;
         mostrarEnSpan("txtPuntaje", puntaje);
+    }
+    if(puntaje==3){
+            velocidadLimon=150;
+        }else if(puntaje==6){
+            velocidadLimon=100;
+        }else if(puntaje==10){
+            alert("Azucar, nos hace falta azucar para esta deliciosa limonada.");
     }
 }
 
