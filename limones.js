@@ -13,8 +13,10 @@ let limonX=canvas.clientWidth/2;
 let limonY=5;
 let puntaje=0;
 let vidas=3;
+let velocidadLimon=125
 
 function iniciar(){
+    setInterval(bajarLimon,velocidadLimon);
     dibujarSuelo();
     dibujarPersonaje();
     aparecerLimon();
@@ -62,6 +64,13 @@ function aparecerLimon(){
     actualizarPantalla();
 }
 
+function bajarLimon(){
+    limonY=limonY+10;
+    actualizarPantalla();
+    detectarColision();
+    detectarSuelo();
+}
+
 function detectarColision(){
     if(limonX+ANCHO_LIMON>personajeX && limonX<personajeX+ANCHO_PERSONAJE && limonY+ALTO_LIMON>personajeY && limonY<personajeY+ALTO_PERSONAJE){
         aparecerLimon();
@@ -78,12 +87,6 @@ function detectarSuelo(){
     }
 }
 
-function bajarLimon(){
-    limonY=limonY+10;
-    actualizarPantalla();
-    detectarColision();
-    detectarSuelo();
-}
 
 function moverIzquierda(){
     personajeX=personajeX-10
