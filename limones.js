@@ -123,3 +123,5 @@ function moverDerecha(){
     actualizarPantalla();
     detectarColision();
 }
+
+//Me di cuenta que la funcion reiniciar esta en el paso 4 del reto pero yo la agregue mucho antes, asi que la dejo igual pues cumple la funcion requerida...
