@@ -13,13 +13,20 @@ let limonX=canvas.clientWidth/2;
 let limonY=5;
 let puntaje=0;
 let vidas=3;
-let velocidadLimon=200
+let velocidadLimon=200;
+let intervalo;
 
 function iniciar(){
     setInterval(bajarLimon,velocidadLimon);
     dibujarSuelo();
     dibujarPersonaje();
     aparecerLimon();
+    function iniciar(){
+    dibujarSuelo();
+    dibujarPersonaje();
+    aparecerLimon();
+    intervalo=setInterval(bajarLimon,velocidadCaida);
+}
 }
 
 function reiniciar(){
@@ -86,6 +93,8 @@ function detectarColision(){
             velocidadLimon=100;
         }else if(puntaje==10){
             alert("Azucar, nos hace falta azucar para esta deliciosa limonada.");
+            clearInterval(intervalo);
+            reiniciar();
     }
 }
 
@@ -94,6 +103,11 @@ function detectarSuelo(){
         aparecerLimon();
         vidas=vidas-1;
         mostrarEnSpan("txtVidas",vidas);
+    }
+    if(vidas==0){
+            alert("GAME OVER");
+            clearInterval(intervalo);
+            reiniciar();
     }
 }
 
