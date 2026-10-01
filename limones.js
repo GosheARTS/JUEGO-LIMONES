@@ -51,7 +51,7 @@ function actualizarPantalla(){
 }
 
 function dibujarSuelo(){
-    ctx.fillStyle="darkgreen";
+    ctx.fillStyle="#2c2c2a";
     ctx.fillRect(0,canvas.clientHeight-ALTO_SUELO,canvas.clientWidth,ALTO_SUELO);
     if(vidas==0){
         alert("GAME OVER");
@@ -59,13 +59,15 @@ function dibujarSuelo(){
 }
 
 function dibujarPersonaje(){
-    ctx.fillStyle="#265E6E";
+    ctx.fillStyle="#2c2c2a";
     ctx.fillRect(personajeX,personajeY,ANCHO_PERSONAJE,ALTO_PERSONAJE)
 }
 
 function dibujarLimon(){
-    ctx.fillStyle="#45b329";
-    ctx.fillRect(limonX,limonY,ANCHO_LIMON,ALTO_LIMON);
+    ctx.fillStyle="#639922";
+    ctx.beginPath();
+    ctx.arc(limonX+ANCHO_LIMON/2, limonY+ALTO_LIMON/2, ANCHO_LIMON/2, 0, Math.PI*2);
+    ctx.fill();
 }
 
 function aparecerLimon(){
