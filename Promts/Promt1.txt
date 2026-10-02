@@ -1,0 +1,18 @@
+PROMPT 1: Utilizada la IA para indagar antes y optar por opciones para el desarrollo del proyecto antes de aplicar cambios directos.
+Segun mi pedido Original mejoro el Prompt con "mejores palabras" como se lo solicite.
+
+Rol: Actúa como un desarrollador frontend experto en HTML, CSS y JavaScript,
+ayudándome a mejorar la interfaz gráfica de un mini juego hecho con canvas.
+
+Contexto: El juego se llama "Atrapa Limones". El personaje debe moverse en el
+suelo para atrapar limones que caen desde arriba, sumando puntos y perdiendo
+vidas si se le escapan.
+
+Solicitud: Antes de tocar código, muéstrame varias opciones de estilo visual
+(colores, forma de los elementos, estética general) para elegir una antes de
+implementarla. Una vez elegida, aplica un estilo minimalista: paleta reducida
+de colores (fondo beige claro, elementos en gris oscuro y un verde de acento),
+botones con forma de píldora y efecto hover suave, bordes redondeados en el
+canvas, y cambiar la forma del limón de cuadrado a círculo para que se vea
+más natural. El botón de Reiniciar debe distinguirse visualmente de los demás
+(color distinto), ya que representa una acción diferente a mover al personaje.inido y bordes redondeados.
