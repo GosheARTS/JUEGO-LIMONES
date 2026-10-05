@@ -1,0 +1,11 @@
+PROMPT 2: solicite que se apliquen cambios similares a los de Juego cazando, el contenedor, el fondo y el icono.
+
+Rol: Actúa como un desarrollador frontend experto en HTML y CSS, ayudándome a
+agregar imágenes reales y un fondo a mi "Juego Limones".
+
+Solicitud: Agregar un ícono decorativo junto al título (fuera del canvas) e
+incorporar una imagen de fondo en la página mediante CSS. Envolver el contenido
+del juego en un contenedor con fondo semi-transparente para mantener la
+legibilidad sobre el nuevo fondo con imagen. Mantener sin cambios la forma
+circular del limón y la paleta de colores ya aplicada en el canvas, ya que
+este proyecto no tiene la restricción de modificar solo HTML/CSS.
